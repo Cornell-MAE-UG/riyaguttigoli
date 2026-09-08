@@ -8,8 +8,13 @@ title: Riya Guttigoli
 
 ![Profile Picture]({{ "/assets/images/new-headshot.jpg" | relative_url }}){: .profile-image}
 
-
  
-My name is {{ site.name }}, and I am a Mechanical Engineering student at Cornell University with a strong interest in hands-on design, analysis, and systems engineering. My experience spans electromechanical design, robotics, and energy systems, including designing custom electromagnets and levitation concepts on Cornell Hyperloop, optimizing wind-turbine blades using BEM theory and structural stress analysis, and building autonomous competition robots under tight size and power constraints. I am drawn to projects that sit at the intersection of hardware and real-world impact, whether that means developing assistive devices to improve accessibility, analyzing thermal performance in industrial systems, or translating theoretical models into manufacturable designs. Through coursework, team projects, and professional experiences, I have developed a strong foundation in CAD, MATLAB, experimental testing, and iterative design, and I am motivated by opportunities to apply engineering principles to create practical, well thought out solutions.
+Hi, I’m Riya. I’m a Mechanical Engineering graduate from Cornell University and currently completing my M.Eng. in Systems Engineering. I’m especially interested in robotics, electromechanical systems, energy, and the way AI can be used to make physical systems more capable and responsive.
+
+Much of my experience has been hands-on. Through Cornell Hyperloop, I worked on magnetic levitation, thermal management, and mechanical integration, serving as both Magnetics Lead and Mechanical Lead during my time on the team. I am also developing a multi-degree-of-freedom testing environment in Cornell’s Organic Robotics Lab for volumetrically manufactured fiber-optic strain sensors. Across these projects, I have worked with CAD, MATLAB, controls, sensing, rapid prototyping, experimental testing, and cross-functional system integration.
+
+I enjoy projects where analytical work leads to something physical that can be built, tested, and improved. My goal is to contribute my skills to roles within multidisciplinary teams where I can combine my mechanical foundation with systems thinking to create thoughtful solutions.
+
+Outside of engineering, I have trained in Kathak (Indian classical dance) since I was five, enjoy learning new instruments, and love to travel whenever I have the opportunity. 
 
 Take a look at <a href="{{ "/projects/" | relative_url }}">my projects</a> and <a href="{{ "/cv/" | relative_url }}">CV</a>.

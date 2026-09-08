@@ -1,13 +1,20 @@
 ---
 layout: project
-title: "MAE4300: Ethical Analysis"
+title: "Ethical Analysis of Boeing 737 MAX"
 description: An engineering ethics analysis of the Boeing 737 MAX, highlighting the intersection of design, incentives, and public safety.
 technologies: [N/A]
+categories: [research]
+card_tags: [Systems, Ethics, Research]
+order: 12
 image: /assets/images/4300cover.avif
 ---
 
 ## Ethical Analysis of the Boeing 737 MAX Crisis
 
+<img src="{{ page.image | relative_url }}"
+     alt="{{ page.title }}"
+     class="overview-image">
+     
 In my analysis of the Boeing 737 MAX crashes, it became clear that the failure was not caused by a single engineering mistake, but by a chain of interconnected technical, organizational, economic, and regulatory decisions. The crisis demonstrates how modern engineering systems are complex and tightly intertwined, meaning that decisions made in one domain can have unintended consequences across many others.
 
 The technical decision that set this chain of events in motion was Boeing’s choice to install larger, more fuel-efficient LEAP-1B engines on the existing 737 airframe. While this helped improve fuel efficiency and stay competitive in the market, it also changed the aircraft’s aerodynamics, center of gravity, and pitch behavior. To manage these changes, Boeing introduced the MCAS software system. However, MCAS relied on input from a single angle-of-attack sensor and could repeatedly command nose-down trim without sufficient redundancy or clear pilot awareness. From an engineering perspective, this introduced a dangerous single point of failure in a safety-critical system.

@@ -1,12 +1,19 @@
 ---
 layout: project
-title: "MAE 4272: Wind Turbine Blade Design"
-description: Wind Tunnel Design, Modeling, and Experimental Validation
+title: "Wind Turbine Blade Design & Testing"
+description: Team-based design and experimental validation of a horizontal-axis wind turbine blade through fabrication, wind tunnel testing, and performance analysis.
 technologies: [MATLAB, CAD (Autodesk Inventor), BEM Theory, Wind Tunnel Testing]
+categories: [energy, hardware]
+card_tags: [Energy, Testing, Aerodynamics]
+order: 8
 image: /assets/images/4272cover.jpg
 ---
 
 ## Project Overview
+
+<img src="{{ page.image | relative_url }}"
+     alt="{{ page.title }}"
+     class="overview-image">
 
 As part of MAE 4272: Fluids and Heat Transfer Laboratory, our team designed, manufactured, and tested a small-scale wind turbine blade intended to maximize power extraction in Cornell’s Big Blue wind tunnel. Our objective was to apply Blade Element Momentum (BEM) theory to design an aerodynamically efficient rotor within strict geometric and experimental constraints, and then validate its real world performance through controlled wind-tunnel testing.
 

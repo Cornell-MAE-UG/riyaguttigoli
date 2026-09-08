@@ -26,13 +26,238 @@ $color_scheme: '{{ site.color_scheme }}';
 }
 
 .gallery-item p {
-  white-space: normal;       /* allow wrapping */
+  width: 100%;
+  max-width: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.25;
+  white-space: normal;
+  overflow-wrap: normal;
+}
+
+.project-image {
+    width: 600px;
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+/* Project gallery layout */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Let each card grow with its title */
+.gallery-item {
+  height: auto;
+  overflow: visible;
+  text-align: center;
+}
+
+/* Keep images consistent */
+.gallery-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Allow project titles to wrap fully */
+.gallery-item p {
+  white-space: normal;
   overflow: visible;
   text-overflow: unset;
+  height: auto;
+  min-height: 3em;
+  line-height: 1.25;
+  margin: 0.75rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+/* Remove underline from the whole card link */
+.gallery-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-figure video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* =========================================
+   PROJECT FILTERS
+   ========================================= */
+
+.projects-page {
+  width: 100%;
+}
+
+.projects-header {
+  max-width: 800px;
+  margin: 0 auto 2rem;
   text-align: center;
-  line-height: 0.9;
-  margin: 12px auto 0;
-  max-width: 260px;          /* adjust until it looks right */
+}
+
+.projects-header h1 {
+  margin-bottom: 0.75rem;
+}
+
+.projects-header p {
+  margin: 0;
+  line-height: 1.6;
 }
 
 
+/* Filter button row */
+
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0 auto 2.5rem;
+}
+
+.filter-button {
+  appearance: none;
+  border: 1px solid #3a3f58;
+  border-radius: 999px;
+  background-color: transparent;
+  color: #3a3f58;
+  padding: 0.55rem 1rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.filter-button:hover {
+  background-color: rgba(58, 63, 88, 0.1);
+  transform: translateY(-1px);
+}
+
+.filter-button.active {
+  background-color: #3a3f58;
+  color: #ffffff;
+}
+
+
+/* Filtered project cards */
+
+.project-card {
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.project-card.project-hidden {
+  display: none;
+}
+
+
+/* Project card structure */
+
+.project-card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-card-image-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project-card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-card-title {
+  margin: 0.85rem auto 0;
+  font-family: "Open Sans", "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+}
+
+
+/* Tags beneath card titles */
+
+.project-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+
+.project-tag {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background-color: rgba(58, 63, 88, 0.09);
+  color: #555b73;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+
+/* Mobile adjustments */
+
+@media screen and (max-width: 600px) {
+  .project-filters {
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter-button {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.82rem;
+  }
+
+  .project-card-title {
+    font-size: 0.9rem;
+  }
+
+  .project-tag {
+    font-size: 0.65rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .project-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+}
