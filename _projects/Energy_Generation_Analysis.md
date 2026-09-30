@@ -110,4 +110,4 @@ Comparison of the current ISO New England generation mix with the proposed 2050 
 
 📄 **Full Technical Report**
 
-[Download Project Report]({{ 'assets\reports\ISONE_EnergyGenerationAnalysis.pdf' | relative_url }})
+[Download Project Report]({{ '/assets/reports/ISONE_EnergyGenerationAnalysis.pdf' | relative_url }})

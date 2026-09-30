@@ -106,4 +106,4 @@ Comparison between the exact Dynamic Programming policy and the One-Step Lookahe
 
 **Final Presentation**
 
-[Download Presentation]({{ 'assets\reports\SYSEN5680 Term Project_ Optimal Parking via Dynamic Programming.pdf' | relative_url }})
+[Download Presentation]({{ 'assets/reports/SYSEN5680 Term Project_ Optimal Parking via Dynamic Programming.pdf' | relative_url }})

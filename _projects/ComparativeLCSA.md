@@ -6,7 +6,7 @@ technologies: [Life Cycle Assessment, Energy Systems, Sustainability, Systems En
 categories: [energy, research]
 card_tags: [Energy, Sustainability, LCA]
 order: 10
-image: assets\images\5299\coverpic.png
+image: assets/images/5299/coverpic.png
 ---
 
 ## Project Overview
@@ -73,4 +73,4 @@ Relationship between environmental interventions, midpoint impact categories, an
 
 📄 **Full Technical Report**
 
-[Download Final Report]({{ 'assets\reports\BEE5299_ Final Project Assignment (1).pdf' | relative_url }})
+[Download Final Report]({{ 'assets/reports/BEE5299_ Final Project Assignment (1).pdf' | relative_url }})

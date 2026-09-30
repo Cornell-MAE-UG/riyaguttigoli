@@ -6,7 +6,7 @@ technologies: [Technology Commercialization, Financial Modeling, Customer Discov
 categories: [entrepreneurship, research]
 card_tags: [Entrepreneurship, Materials, Finance]
 order: 11
-image: assets\images\5070\coverpic.png
+image: assets/images/5070/coverpic.png
 ---
 
 ## Project Overview
@@ -104,8 +104,8 @@ Fundraising roadmap outlining capital requirements, milestone planning, and the 
 
 📄 **Executive Summary**
 
-[Download Report]({{ 'assets\reports\Executive Summary.pdf' | relative_url }})
+[Download Report]({{ 'assets/reports/Executive Summary.pdf' | relative_url }})
 
 📄 **Final Investor Pitch Deck**
 
-[Download Presentation]({{ 'assets\reports\Final Pitch Deck NBA5070.pdf' | relative_url }})
+[Download Presentation]({{ 'assets/reports/Final Pitch Deck NBA5070.pdf' | relative_url }})
